@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: jiang
+  User: 李昱
   Date: 2021/11/26
   Time: 15:00
   To change this template use File | Settings | File Templates.
@@ -18,7 +18,7 @@
   </header>
   <section class="loginCont">
     <form class="loginForm" action="${pageContext.request.contextPath }/user/login"  name="actionForm" id="actionForm"  method="post" >
-      <div class="info">${msg}</div>
+      <div class="info">${requestScope.msg}</div>
       <div class="inputbox">
         <label >用户名：</label>
         <input type="text" class="input-text" id="userCode" name="username" placeholder="请输入用户名" required/>
